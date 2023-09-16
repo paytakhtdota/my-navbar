@@ -5,27 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./navStyle.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Navbar</title>
+    <script src="./script.js"></script>
 </head>
 
 <body>
     <div id="nav-container">
         <div class="nav-parts" id="nav-part1">
-            <div class="nav-items"><a class="skew-reverse" href="./index.html"><i class="fa-solid fa-house-chimney" style="padding-right: 3px;"></i> HOME </a></div>
-            <div class="nav-items"><a class="skew-reverse" href="#"><i class="fa-solid fa-envelope" style="padding-right: 3px;"></i> CONTACT </a></div>
-            <div class="nav-items"><a class="skew-reverse" href="#"><i class="fa-solid fa-briefcase" style="padding-right: 3px;"></i> PORTFOLIO </a></div>
+            <div class="nav-items"><a class="skew-reverse" href="./index.html"><i class="fa-solid fa-house-chimney"
+                        style="padding-right: 3px;"></i> HOME </a></div>
+            <div class="nav-items"><a class="skew-reverse" href="#"><i class="fa-solid fa-envelope"
+                        style="padding-right: 3px;"></i> CONTACT </a></div>
+            <div class="nav-items"><a class="skew-reverse" href="#"><i class="fa-solid fa-briefcase"
+                        style="padding-right: 3px;"></i> PORTFOLIO </a></div>
             <div class="nav-items">
-                <a class="skew-reverse" href="#"><i class="fa-solid fa-magnifying-glass" style="padding-right: 3px;"></i> SEARCH </a></div>
-                    </div>
+                <a onclick="showblock()" class="skew-reverse" href="#"><i class="fa-solid fa-magnifying-glass"
+                        style="padding-right: 3px;"></i> SEARCH </a>
+            </div>
+        </div>
         <div class="nav-parts" id="nav-part2">
             <img src="./avatar.png" alt="avatar">
 
         </div>
         <div class="nav-parts" id="nav-part3">
-            <div class="nav-items"><a class="skew-reverse" href="#"><i class="fa-solid fa-right-to-bracket" style="padding-right: 3px;"></i> LOGIN </a></div>
+            <div class="nav-items"><a class="skew-reverse" href="#"><i class="fa-solid fa-right-to-bracket"
+                        style="padding-right: 3px;"></i> LOGIN </a></div>
 
         </div>
+    </div>
+    <div id="search-box">
+        
+        <div><input type="text"><input type="button" value="SEARCH"><span><i onclick="unshow()" class="fa-regular fa-circle-xmark"></i></span></div>
+
     </div>
 
 </body>
